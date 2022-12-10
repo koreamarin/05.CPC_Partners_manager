@@ -162,7 +162,7 @@ class MainDialog(QDialog) :
         ID = self.News_Pick_ID_edit.text()
         PW = self.News_Pick_PW_edit.text()
 
-        login = self.driver.find_elements(By.CSS_SELECTOR, ".input-group > .input-m")
+        login = self.driver.find_elements(By.CSS_SELECTOR, ".input-m")
         login[0].click()
         login[0].send_keys(ID)
         login[1].click()
